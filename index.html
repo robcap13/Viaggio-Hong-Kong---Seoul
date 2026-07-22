@@ -711,7 +711,8 @@ function galleryCardHTML(p, accent, i){
     ${media}
     <div class="g-cap"><h4>${p.n}</h4><span class="g-num">${String(i+1).padStart(2,'0')}</span></div>
     <p>${p.d}</p>
-    <div class="tip"><b>💡 tip —</b><span>${p.tip}</span></div>
+    ${p.tip ? `<div class="tip"><b>💡</b><span>${p.tip}</span></div>` : ''}
+    ${p.move ? `<div class="tip"><b>🚗</b><span>${p.move}</span></div>` : ''}
   </div>`;
 }
 
