@@ -287,8 +287,30 @@ const DAYS = [
 {
   id:1, region:"hk", date:"Sab 15 Agosto", city:"Hong Kong", hotel:"Hotel a Hong Kong (da confermare)",
   flight:"Volo Napoli → Hong Kong (Lufthansa)",
-  note:"Sezione in aggiornamento: appena mi invierai il file con i dettagli di Hong Kong, la completo con lo stesso livello di dettaglio (orari, spostamenti, luoghi) delle altre tappe.",
-  schedule:[], places:[]
+  schedule:[
+    {time:"09:30", text:"Arrivo Vittorio", type:"logistics"},
+    {time:"10:30", text:"Arrivo Francesco", type:"logistics"},
+    {time:"13:30", text:"Arrivo Roberto", type:"logistics"},
+    {time:"15:00", text:"Check-in in albergo", type:"logistics"},
+    {time:"17:00", text:"Star Ferry", type:"visit"},
+    {time:"18:30", text:"Victoria Harbour", type:"visit"},
+    {time:"19:30", text:"Cena: Yat Tung Heen - Eaton HK", type:"meal"},
+    {time:"21:30", text:"Porto Victoria", type:"visit"},
+    {time:"23:00", text:"Mong Kok", type:"visit"}
+  ],
+, places:[
+  {n:"[15:00] Check-in in albergo", d:"Arrivi scaglionati durante la giornata (Vittorio alle 9:30, Francesco alle 10:30, Roberto alle 13:30): chi arriva prima può aspettare gli altri in aeroporto o muoversi in autonomia verso l'hotel. Check-in al B P International verso le 15:00, tempo per sistemarsi prima di uscire per la prima serata.", img:"BP International.jpg", tip:"L'aeroporto di Hong Kong è collegato al centro dall'Airport Express (circa 24 minuti fino a Hong Kong Station) oppure da taxi (30-45 minuti a seconda del traffico e della destinazione)."},
+
+{n:"[17:00] Star Ferry", d:"<b>Un fornaio che inventò un traghetto</b><br>Tutto cominciò nel 1880 con Dorabjee Naorojee Mithaiwala, un immigrato parsi che gestiva un forno e aveva bisogno di trasportare il pane tra Kowloon e Central: acquistò un piccolo battello a vapore, il Morning Star, inizialmente solo per uso personale e dei propri operai. Accortosi che il servizio poteva essere redditizio anche per i passeggeri, fondò nel 1888 la Kowloon Ferry Company, che nel 1898 assunse il nome attuale, Star Ferry Company — il nome deriva dal fatto che ogni imbarcazione della flotta porta la parola Star nel nome (Morning Star, Evening Star, Twinkling Star...), un omaggio alla poesia Crossing the Bar di Alfred Tennyson, che Mithaiwala amava.<br><br><b>Un simbolo che ha attraversato le proteste</b><br>Nel 2006 lo storico molo di Edinburgh Place, con il suo caratteristico orologio, fu demolito per far spazio ai lavori di bonifica di Central: la decisione scatenò forti proteste da parte dei conservazionisti, che vedevano nella demolizione la perdita di un pezzo importante dell'identità cittadina. Ancora prima, nel 1966, un aumento delle tariffe aveva innescato uno sciopero della fame di uno studente proprio al molo di Central, degenerato nei disordini noti come le Star Ferry Riots.<br><br><b>Perché resta un'esperienza da non perdere</b><br>Nonostante oggi esistano la metro e i tunnel stradali sotto il porto, molto più rapidi, la traversata in Star Ferry resta uno dei modi più economici e panoramici per attraversare Victoria Harbour — il National Geographic Traveler l'ha inserita tra i 50 luoghi da vivere almeno una volta. Il tragitto dura circa 10 minuti e collega Tsim Sha Tsui a Central (Pier 7) e Wan Chai.", img:"Star Ferry.jpg", tip:"Costa pochissimo (circa 5-6 HKD a tratta) e si paga con Octopus card o gettone alla biglietteria. Il lato superiore (\"upper deck\") offre la vista migliore; se possibile, sedetevi dal lato rivolto verso lo skyline invece che verso il mare aperto.", move:"Partenza verso Victoria Harbour (stesso molo/promenade)."},
+
+{n:"[18:30] Victoria Harbour", d:"Il porto naturale attorno a cui è cresciuta tutta Hong Kong, e ancora oggi il suo cuore visivo: da un lato lo skyline di Hong Kong Island con l'IFC e il Bank of China Tower, dall'altro la promenade di Tsim Sha Tsui, con l'Avenue of Stars dedicata al cinema di Hong Kong (incluse le impronte di Bruce Lee). Il nome deriva dalla regina Vittoria, e il porto è stato per oltre un secolo e mezzo il motivo stesso dell'esistenza della colonia britannica, scelta proprio per le sue acque profonde e riparate, ideali per l'attracco delle navi.", img:"Victoria Harbour.jpg", tip:"Se possibile, organizzatevi per essere sulla promenade di Tsim Sha Tsui verso le 20:00: ogni sera va in scena il Symphony of Lights, lo spettacolo di luci sincronizzate sui grattacieli del lato di Hong Kong Island.", move:"Partenza verso Yat Tung Heen per cena."},
+
+{n:"[19:30] Cena: Yat Tung Heen - Eaton HK", d:"Ristorante cantonese all'interno dell'Eaton HK Hotel, specializzato in dim sum e piatti cantonesi raffinati, con diverse stelle Michelin ottenute nel corso degli anni. Un buon modo per iniziare il viaggio con un pasto curato prima di lanciarsi nell'esplorazione più informale dei giorni successivi.", img:"Yat Tung Heen.jpg", tip:"Essendo un ristorante più formale rispetto alla media dei locali che troverete nei prossimi giorni, conviene prenotare in anticipo, specialmente se siete in un gruppo numeroso.", move:"Partenza verso il porto (zona Victoria/Wan Chai)."},
+
+{n:"[21:30] Porto Victoria", d:"Una passeggiata serale lungo il porto, con lo skyline illuminato di entrambe le sponde — un buon modo per digerire la cena e ambientarsi nell'atmosfera della città prima di spostarsi verso Mong Kok.", img:"Victoria Harbour notte.jpg", tip:""},
+
+{n:"[23:00] Mong Kok", d:"Uno dei quartieri più densamente popolati al mondo, nel cuore di Kowloon: insegne al neon, mercati notturni (incluso il celebre Ladies' Market), negozi di elettronica e street food a ogni angolo. È il posto giusto per un primo assaggio del lato più caotico e verticale di Hong Kong, aperto fino a tardi.", img:"Mong Kok.jpg", tip:"La stazione MTR di Mong Kok (linee Tsuen Wan e Kwun Tong) è il punto di riferimento più comodo per orientarsi nella zona."}
+]
 },
 {
   id:2, region:"hk", date:"Dom 16 Agosto", city:"Hong Kong", hotel:"Hotel a Hong Kong (da confermare)",
